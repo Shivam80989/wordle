@@ -13,7 +13,7 @@ function App() {
       .then(json => {
         // random int between 0 & 14
         const randomSolution = json[Math.floor(Math.random()*json.length)]
-        setSolution("hello")
+        setSolution(randomSolution)
       })
   }, [setSolution])
 
